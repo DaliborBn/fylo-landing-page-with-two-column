@@ -29,8 +29,13 @@
           </p>
         </div>
         <div class="section1-box">
-          <input type="email" placeholder="Enter your email...">
-          <button>Get Started</button>
+          <div class="email">
+            <input id="email-field" type="email" spellcheck="false" placeholder="Enter your email..." onkeyup="validationEmail()">
+            <span id="email-error"></span>
+          </div>
+          <div class="button">
+            <button>Get Started</button>
+          </div>
         </div>
       </div>
       <div class="section1-image">
@@ -89,7 +94,8 @@
           If you have any questions, our support team would be happy to help you.</p>
       </div>
       <div class="sign-up-input">
-        <input type="email" placeholder="example@company.com">
+        <input id="mejl-polje" type="email" spellcheck="false" placeholder="example@company.com" onkeyup="provjeraMejla()">
+        <span id="mejl-greska"></span>
         <button>Get Started For Free</button>
       </div>
     </div>
@@ -134,5 +140,40 @@
       </div>
     </div>
   </div>
+<script>
+function validationEmail() {
+var emailField = document.getElementById('email-field');
+var emailError = document.getElementById('email-error');
+
+  if (!emailField.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+    emailError.innerHTML = 'Please check your email!';
+    emailField.style.border = '2px solid red';
+    emailField.style.outline = 'none';
+    return false;
+  } else {
+    emailError.innerHTML = '';
+    emailField.style.border = '3px solid var(--light-gray)';
+    emailField.style.outline = 'none';
+    return true;
+  }
+}
+
+function provjeraMejla() {
+  var mejlPolje = document.getElementById('mejl-polje');
+  var mejlGreska = document.getElementById('mejl-greska');
+  
+    if (!mejlPolje.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+      mejlGreska.innerHTML = 'Please check your email!';
+      mejlPolje.style.border = '2px solid red';
+      mejlPolje.style.outline = 'none';
+      return false;
+    } else {
+      mejlGreska.innerHTML = '';
+      mejlPolje.style.border = 'none';
+      mejlPolje.style.outline = 'none';
+      return true;
+    }
+  }
+</script>
 </body>
 </html>
