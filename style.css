@@ -104,11 +104,12 @@ body {
   display: flex;
   flex-direction: column;
 }
-#email-error {
+#email-error-first {
   color: red;
   font-size: 1.3rem;
   font-family: var(--opensans);
   padding-top: 0.2rem;
+  visibility: hidden;
 }
 .section1-box input {
   width: 100%;
@@ -324,7 +325,7 @@ body {
   flex-direction: column;
   padding: 7%;
 }
-#mejl-greska {
+#email-error-second {
   color: white;
   font-family: var(--opensans);
   margin-top: 0.2rem;
