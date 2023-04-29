@@ -1,3 +1,3 @@
 ### FYLO LANDING PAGE WITH TWO COLUMN
 #### Visit live URL: https://candid-starship-eedba1.netlify.app
-<a href="https://candid-starship-eedba1.netlify.app"><img src="https://user-images.githubusercontent.com/109923493/235314612-4d12a80e-3dff-4e5b-b264-514fe34bfa1d.png"></a>
+<a href="https://candid-starship-eedba1.netlify.app"><img src="https://user-images.githubusercontent.com/109923493/235314809-176f3e4d-c4c5-41ab-90b4-d58c07421fb4.png"></a>
