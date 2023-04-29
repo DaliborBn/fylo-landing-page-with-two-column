@@ -42,7 +42,7 @@
   left: 0;
   top: 10px; // look better when is clicked on hamburger menu (better position)
   transform: rotate(0deg);
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 .middle-bar {
   margin-top: 0px;
@@ -67,7 +67,6 @@
 .navbar-toggler .top-bar {
   margin-top: 0;
   transform: rotate(45deg);
-  background: $primary;
 }
 .navbar-toggler .middle-bar {
   opacity: 0;
@@ -76,7 +75,6 @@
 .navbar-toggler .bottom-bar {
   margin-top: 0;
   transform: rotate(-45deg);
-  background: $primary;
 }
 // Color of 3 lines
 .navbar-toggler.collapsed .toggler-icon {
