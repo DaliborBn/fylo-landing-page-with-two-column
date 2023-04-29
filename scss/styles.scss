@@ -1,0 +1,318 @@
+@import 'utilities';
+@import 'mixins';
+
+/* NAVBAR */
+.navbar-nav .nav-link:nth-child(3) {
+  padding-right: 0;
+}
+.navbar {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  img {
+    width: 60%;
+  }
+}
+//start of hamburger menu
+.navbar-toggler {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: $white;
+  border-radius: 1px;
+  left: 0;
+  top: 10px; // look better when is clicked on hamburger menu (better position)
+  transform: rotate(0deg);
+  transition: 0.2s ease-in-out;
+}
+.middle-bar {
+  margin-top: 0px;
+}
+// State when the navbar is collapsed
+.navbar-toggler.collapsed .top-bar {
+  position: absolute;
+  top: 0px;
+  transform: rotate(0deg);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+}
+.navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  top: 20px;
+  transform: rotate(0deg);
+}
+// when hamburger is clicked
+.navbar-toggler .top-bar {
+  margin-top: 0;
+  transform: rotate(45deg);
+  background: $primary;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  margin-top: 0;
+}
+.navbar-toggler .bottom-bar {
+  margin-top: 0;
+  transform: rotate(-45deg);
+  background: $primary;
+}
+// Color of 3 lines
+.navbar-toggler.collapsed .toggler-icon {
+  background: $white;
+}
+//end of hamburger menu
+
+//links in navbar
+.navbar-nav {
+  margin-top: 1rem;
+}
+.nav-link {
+  color: $white;
+  font-family: $raleway;
+  font-size: 1.5rem;
+  width: fit-content;
+}
+
+/* SECTION 1 */
+.section-1 {
+  margin-bottom: 7rem;
+  @include section($white);
+  img {
+    width: 90%;
+    transition: all 0.8s ease-in-out;
+  }
+  .input-group {
+    margin-top: 2rem;
+    @include input;
+  }
+  .message {
+    @include message;
+    #message1 {
+      display: none;
+    }
+  }
+  .button {
+    margin-top: 1.5rem;
+    @include button;
+  }
+}
+
+/* CURVE */
+.curve .mobile {
+  display: block;
+  width: 100%;
+}
+.curve .desktop {
+  display: none;
+  width: 100%;
+}
+
+/* SECTION 2 */
+.wrapper-section-2 {
+  background-color: $light-grayish-blue;
+  padding-bottom: 7rem;
+}
+.section-2 {
+  @include section($very-dark-blue);
+  img {
+    width: 90%;
+    transition: all 0.8s ease-in-out;
+  }
+  .bi-arrow-right-circle-fill {
+    color: $cyan;
+    margin-left: 0.5rem;
+    font-size: 1.2rem
+  }
+  .btn {
+    background-color: transparent;
+    color: $cyan;
+    border: none;
+    border-bottom: 1px solid $cyan;
+    padding: 0;
+    width: fit-content;
+    font-size: 1.5rem;
+    padding-bottom: 0.2rem;
+    margin-top: 2rem;
+  }
+}
+// card-testimonial
+.card {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+  background-color: $white;
+  padding: 2.5rem 1.7rem 2.5rem 2.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: none;
+  .quotes-image {
+    width: 5%;
+    max-width: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .card-body {
+    padding: 0;
+  }
+  h5 {
+    font-size: 1.2rem;
+    color: $very-dark-blue;
+    line-height: 1.6;
+  }
+  .card-footer {
+    padding: 0;
+    background-color: transparent;
+    border-top: none;
+    margin-top: 1rem;
+  }
+  .avatar {
+    width: 3rem;
+    border: 0.2rem solid white;
+  }
+  .name {
+    margin-left: 1rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+    color: $very-dark-blue;
+  }
+  h4 {
+    font-size: 1.1rem;
+    color: $desaturated-blue;
+    margin-top: 0.2rem;
+  }
+}
+
+/* SIGN UP */
+.sign-up {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  h3 {
+    font-size: 1.7rem;
+    font-family: $raleway;
+  }
+  p {
+    font-size: 1.4rem;
+    font-family: $opensans;
+    line-height: 1.5;
+    margin: 2rem 0;
+  }
+  .input-box {
+    padding: 0 3rem;
+  }
+  .input-group {
+    margin-top: 2rem;
+    @include input;
+  }
+  .message {
+    @include message;
+  }
+  .button {
+    margin-top: 1.5rem;
+    @include button;
+  }
+}
+
+/* FOOTER */
+.wrapper-footer {
+  background-color: $dark-blue;
+}
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-family: $opensans;
+  img {
+    width: 55%;
+    max-width: 15rem;
+  }
+  .row {
+    margin-top: 3rem;
+  }
+  .info-icon {
+    color: $white;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+  }
+  .info p:nth-child(2) {
+    margin-top: 0.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .links {
+    margin-top: 4rem;
+  }
+  .links ul li {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  a {
+    color: $white;
+  }
+  .social {
+    margin-top: 6rem;
+  }
+  .social-icon {
+    font-size: 2.5rem;
+    color: $white;
+  }
+  .social a:nth-child(2) {
+    margin: 0 1.5rem;
+  }
+}
+
+// HOVERS
+@media (hover: hover) {
+  .navbar-brand img:hover {
+    transform: rotate(-4deg) scale(1.1);
+  }
+  .navbar-nav .nav-link.active:hover {
+    color: inherit;
+  }
+  .navbar-nav .nav-link:hover {
+    color: $primary;
+  }
+  .section-image a img:hover {
+    transform: scale(1.1)
+  }
+  .section-2 .btn:hover {
+    opacity: 0.7;
+  }
+  .card {
+    &:hover {
+      background-color: $light-blue;
+    }
+    &:hover h4 {
+      color: $white;
+    }
+  }
+  .footer .links a:hover {
+    color: $primary;
+  }
+  .social-icon:hover {
+    color: $primary;
+  }
+}
+
+@import 'responsive';

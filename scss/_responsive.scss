@@ -1,0 +1,176 @@
+@media (min-width:376px) {
+  .curve .mobile {
+    display: none;
+  }
+  .curve .desktop {
+    display: block;
+  }
+}
+
+@media (min-width:576px) {
+  .navbar-nav {
+    margin-top: 0;
+  }
+  .nav-link:nth-child(2) {
+    margin: 0 2rem;
+  }
+  .footer {
+    .links {
+      margin-top: 0;
+    }
+    .links ul li:nth-child(1) {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width:768px) {
+  .navbar {
+    margin-top: 3rem;
+    img {
+      width: 100%;
+    }
+  }
+  .section-1 {
+    h2 {
+      font-size: 2.2rem;
+    }
+    img {
+      width: 85%;
+    }
+    .message {
+      #message1 {
+      display: block;
+      visibility: hidden;
+      }
+    }
+    .button {
+      margin-top: 2rem;
+    }
+  }
+  .section-2 {
+    img {
+      width: 85%;
+    }
+    h2 {
+      width: 125%;
+      font-size: 2.2rem;
+    }
+    .card {
+      padding: 2.5rem
+    }
+  }
+  .sign-up {
+    .about {
+      padding-right: 20%;
+    }
+    .input-box {
+      padding: 0;
+    }
+    button {
+      max-width: 22rem;
+    }
+  }
+  .footer {
+    .social {
+      margin-top: 0;
+    }
+    .social-icon::before {
+      vertical-align: baseline;
+    }
+  }
+}
+
+@media (min-width:992px) {
+  .section-1 h2, .section-2 h2 {
+    font-size: 3.1rem;
+  }
+  .card {
+    width: 70%;
+  }
+
+  // Animation .section-image
+  .main-container {
+    overflow-x: hidden; 
+  }
+  .section-image {
+    opacity: 0;
+    transform: translateX(300%);
+    transition: all ease-out 1.2s;
+  }
+  .section-image.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  // Animation .card
+  .card {
+    transform: translateX(-300%);
+  }
+  .card-animate {
+    animation: animateCard 2.2s forwards ease-out 0.8s;
+  }
+  @keyframes animateCard {
+    0% {
+      transform: translateX(-300%);
+    }
+    35% {
+      transform: translateX(50%);
+    }
+    70% {
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: none;
+    }
+  }
+}
+
+@media (min-width:1200px) {
+  .section-1, .section-2 {
+    h2 {
+      font-size: 3.7rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+  .section-2 {
+    a.btn {
+    font-size: 1.7rem;
+    }
+    .bi-arrow-right-circle-fill {
+      font-size: 1.4rem;
+    }
+  }
+  .card {
+    h5 {
+      font-size: 1.4rem;
+    }
+    .avatar {
+      width: 3.5rem;
+      border: 0.3rem solid white;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
+    h4 {
+      font-size: 1.3rem;
+    }
+  }
+  .sign-up {
+    h3 {
+      font-size: 2rem;
+      font-family: $raleway;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (min-width:1400px) {
+  .section-1 h2, .section-2 h2 {
+    font-size: 3.8rem;
+  }
+}

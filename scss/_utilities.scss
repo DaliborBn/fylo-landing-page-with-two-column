@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+$opensans: 'Open Sans', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$light-blue: rgb(59, 104, 133);
+$dark-blue: rgb(21, 51, 70);
+$very-dark-blue: hsl(243, 87%, 12%);
+$desaturated-blue: hsl(238, 22%, 44%);
+$cyan: hsl(170, 45%, 43%);
+$light-grayish-blue: hsl(240, 75%, 98%);
+$light-gray: hsl(0, 0%, 75%);
+
+$paragraph-margin-bottom: 0;
+$headings-margin-bottom: 0;
+$primary: #d5418b;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: $light-blue;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.my-transition {
+  transition: all ease 0.3s;
+}
+.padd-x {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
