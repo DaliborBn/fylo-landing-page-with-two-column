@@ -8407,6 +8407,16 @@ ul {
   padding-left: 3rem;
   padding-right: 3rem; }
 
+/* // Simple, just change color of hamburger menu
+.navbar-toggler {
+  color: transparent;
+  border: none;
+  font-size: 2rem;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+*/
 /* NAVBAR */
 .navbar-nav .nav-link:nth-child(3) {
   padding-right: 0; }
@@ -8608,7 +8618,7 @@ ul {
   .card .card-body {
     padding: 0; }
   .card h5, .card .h5 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #070439;
     line-height: 1.6; }
   .card .card-footer {
